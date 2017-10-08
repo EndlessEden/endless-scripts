@@ -21,6 +21,7 @@ mkdir build-dir
 cd build-dir
 git clone https://aur.archlinux.org/yaourt-git.git
 git clone https://aur.archlinux.org/package-query-git.git
+pacman --noconfirm --force -S base-devel
 cd package-query-git 
 makepkg -s && sudo pacman -U *.xz
 cd ..
